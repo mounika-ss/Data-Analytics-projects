@@ -1,4 +1,4 @@
-# Ferns and Petals Sales Analysis using Excel
+# Sales Analysis Using Excel (Guided Project)
 
 ## Overview
 This project focuses on performing an end-to-end **sales analysis** for *Ferns and Petals*, an online gifting platform. The goal was to explore and analyze sales performance, customer behavior, and product trends using **Excel’s advanced data analysis and visualization tools**.
@@ -43,10 +43,11 @@ This guided project strengthened skills in data cleaning, modeling, visualizatio
 ---
 
 ## Project Objectives
-- Analyze sales performance, revenue trends, and customer purchasing behavior.  
-- Identify top-performing products, categories, and cities.  
-- Evaluate order and delivery patterns to improve operational efficiency.  
-- Create an interactive dashboard summarizing business insights.
+- To perform data extraction, cleaning, and transformation using Power Query.  
+- To create relationships and data models using Power Pivot.  
+- To analyze sales performance and customer behavior.  
+- To calculate key performance metrics such as total revenue, average spend, and delivery time.  
+- To visualize business insights using Excel dashboards.
 
 ---
 
@@ -65,60 +66,62 @@ The dataset simulates business data for *Ferns and Petals* and contains the foll
 
 | File | Description |
 |------|--------------|
-| `customers.csv` | Customer details including ID, Name, City, Gender, and Contact Information |
-| `orders.csv` | Order transactions with product details, dates, quantities, and occasions |
-| `products.csv` | Product catalog with category, price, and description information |
+| `customers.csv` | Customer_ID, Name, City, Contact_Number, Email, Gender, Address |
+| `orders.csv` | Order_ID, Customer_ID, Product_ID, Quantity, Order_Date, Order_Time, Delivery_Date, Delivery_Time, Location, Occasion |
+| `products.csv` | Product_ID, Product_Name, Category, Price (INR), Occasion, Description |
 
 ---
 
 ## Project Workflow
 
 ### 1. Data Extraction and Loading
-- Loaded multiple CSV files using **Power Query Editor**.
+- Imported multiple CSV files using the “Get Data → From Folder” option.  
+- Used Power Query to consolidate the datasets and prepare them for transformation.
 - Combined data by folder connection for automatic updates.
+- Added new queries and renamed tables for better readability.
 - Added each dataset as a separate table and loaded to the Excel Data Model.
 
 ### 2. Data Cleaning and Transformation
 Performed in Power Query:
-- Removed duplicates and validated primary keys.
-- Checked and handled null values.
-- Standardized data types (converted contact numbers to text).
-- Extracted useful fields such as:
-  - Month and Hour from date and time columns.
-  - Order-to-Delivery duration (difference in days).
-- Merged tables to calculate total **Revenue** (`Price × Quantity`).
-- Removed unnecessary columns (e.g., address, description).
+- Checked and removed duplicates and null values.  
+- Verified and corrected data types for each column.  
+- Converted the contact number column to text for clear formatting.  
+- Extracted month and hour from order and delivery date-time fields.  
+- Calculated delivery difference (order to delivery days).  
+- Merged the “Orders” and “Products” tables using Product_ID to add price information.  
+- Created a new revenue column as (`Price × Quantity`).
+- Removed unnecessary columns such as description, address, email, and contact number.
 
-### 3. Data Modeling
-- Established relationships among tables using primary and foreign keys:
-  - `Customer_ID` and `Product_ID` linked across datasets.
-- Created calculated columns using **DAX**:
-  - `Revenue_p_q` (Revenue per order)
-  - `Order_Day_Name` (Day of order)
-- Enabled Power Pivot for efficient modeling and calculations.
+### 3. Data Modeling (Power Pivot)
+- Loaded cleaned tables into Excel Data Model.  
+- Established relationships between fact and dimension tables using primary and foreign keys.  
+- Created calculated columns using DAX formulas such as:
+  - `Revenue_p_q = [Price] * [Quantity]`
+  - `Order_Day_Name = FORMAT([Order_Date], "DDDD")`
+- Built measures to calculate key metrics like total revenue and average delivery time.
 
 ### 4. Data Analysis
 Conducted multiple analyses using pivot tables to answer key business questions:
-1. Total Revenue
-2. Average Order and Delivery Time
-3. Monthly Sales Trends
-4. Top Products by Revenue
-5. Customer Spending Patterns
-6. Category-wise Sales Performance
-7. Top Cities by Number of Orders
-8. Correlation between Quantity and Delivery Time
-9. Revenue by Occasion
-10. Product Popularity by Occasion
+- Total revenue and total orders  
+- Average order-to-delivery time  
+- Monthly sales trends  
+- Top 5 products by revenue  
+- Average customer spending (Patterns)
+- Revenue comparison by category and occasion (Category-wise Sales Performance)
+- Top 10 cities by orders  
+- Correlation between quantity and delivery time  
+- Product popularity by occasion
+- Revenue by Occasion
 
 ---
 
 ## Dashboard Highlights
-Developed an **interactive Excel dashboard** showcasing:
-- Monthly and category-wise revenue trends.
-- Top-performing products and cities.
-- Key metrics: Total Revenue, Average Delivery Time, and Total Orders.
-- Slicers and timelines for dynamic filtering.
-- Clean, professional visual design using consistent themes and color schemes.
+- Created pivot tables and pivot charts based on the analysis.  
+- Added KPI boxes showing total orders, total revenue, average delivery days, and average spend.  
+- Used slicers for interactive filtering by occasion, month, and city.  
+- Applied timeline filters for date-based analysis.  
+- Customized dashboard layout with consistent colors and titles for clarity.  
+- Finalized the dashboard view and exported an image as the project summary.
 
 ---
 
@@ -127,6 +130,10 @@ Developed an **interactive Excel dashboard** showcasing:
 - Certain product categories dominated revenue across top cities.
 - Delivery times showed variation depending on order size and occasion.
 - Customer spending patterns helped identify high-value segments.
+- **Total Orders:** 1,000  
+- **Total Revenue:** ₹35,20,984  
+- **Average Order-Delivery Days:** 5.53 days  
+- **Average Customer Spend:** ₹3,520.98  
 
 ---
 
@@ -148,4 +155,6 @@ This guided Excel project demonstrates the complete process of **data analysis �
 **Author:** Mounika Seelam  
 **Tools Used:** Microsoft Excel, Power Query, Power Pivot  
 **Project Type:** Guided Data Analytics Project
-**From YT:** https://www.youtube.com/watch?v=Wom-eVrE4RY&t=3612s
+
+**From YT, Source Reference:** This project was completed as a guided practice based on the YouTube tutorial:
+Link: [Watch on YouTube](https://www.youtube.com/watch?v=Wom-eVrE4RY)
