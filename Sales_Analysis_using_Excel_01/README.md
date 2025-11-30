@@ -7,6 +7,41 @@ This was a **guided project** designed to strengthen data analytics skills, from
 
 ---
 
+## Executive Summary
+
+The Ferns and Petals Sales Analysis project aimed to perform a complete business analysis using Microsoft Excel to understand key sales trends, customer behavior, and operational performance.
+The dataset contained customer, order, and product information, enabling analysis from multiple perspectivesâ€”such as revenue, order frequency, product popularity, and delivery timelines.
+
+The project followed an end-to-end data analytics workflow:
+
+- Data Extraction and Cleaning: Using Power Query Editor, raw CSV files were imported, cleaned, and standardized. This included removing duplicates, checking for null values, converting data types, and creating additional columns such as month, day, and delivery duration.
+
+- Data Modeling: Relationships were established between tables (Customers, Orders, and Products) using Power Pivot to create a robust data model. Calculated columns and DAX formulas were added to derive insights such as revenue per order and day of the week.
+
+- Data Analysis: Multiple pivot tables were created to answer business questions such as:
+  - Total and average revenue
+  - Monthly sales performance
+  - Top products and cities by orders
+  - Customer spending patterns
+  - Revenue variations across occasions
+  - Relationship between order quantity and delivery time
+
+- Dashboard Development: An interactive Excel dashboard was designed to present key insights visually. It includes dynamic slicers, timelines, and KPIs (total orders, average delivery time, and revenue). The dashboard provides a concise view for business decision-making.
+
+
+Key Findings:
+
+- Sales were highly influenced by special occasions and seasonal demand.
+- Certain product categories generated higher revenue consistently across top cities.
+- Customers from metropolitan cities contributed the most to total sales.
+- Average delivery time and order quantity had minimal correlation, indicating efficient logistics handling.
+- The interactive dashboard helps quickly identify performance trends and focus areas for improvement.
+
+Outcome:
+This guided project strengthened skills in data cleaning, modeling, visualization, and business interpretation using Excel. It demonstrates the ability to transform raw business data into meaningful insights and present them effectively through a professional dashboard.
+
+---
+
 ## Project Objectives
 - Analyze sales performance, revenue trends, and customer purchasing behavior.  
 - Identify top-performing products, categories, and cities.  
@@ -113,3 +148,4 @@ This guided Excel project demonstrates the complete process of **data analysis â
 **Author:** Mounika Seelam  
 **Tools Used:** Microsoft Excel, Power Query, Power Pivot  
 **Project Type:** Guided Data Analytics Project
+**From YT:** https://www.youtube.com/watch?v=Wom-eVrE4RY&t=3612s
