@@ -115,7 +115,7 @@ Conducted multiple analyses using pivot tables to answer key business questions:
 
 ---
 
-## Dashboard Highlights
+## Dashboard Creation
 - Created pivot tables and pivot charts based on the analysis.  
 - Added KPI boxes showing total orders, total revenue, average delivery days, and average spend.  
 - Used slicers for interactive filtering by occasion, month, and city.  
@@ -135,24 +135,45 @@ Conducted multiple analyses using pivot tables to answer key business questions:
 - **Average Order-Delivery Days:** 5.53 days  
 - **Average Customer Spend:** ₹3,520.98  
 
+**Top Insights**
+- Anniversary occasion generated the highest revenue.  
+- The “Colors” category contributed the most to total sales.  
+- Top cities included Dhanbad, Imphal, and Kavali.  
+- Highest sales were recorded during February.  
+- Most orders were placed between 10 AM and 8 PM.
 ---
+
+## Tools and Techniques Used
+- **Microsoft Excel**
+  - Power Query Editor (ETL – Extract, Transform, Load)
+  - Power Pivot (Data Modeling and DAX)
+  - Pivot Tables and Charts
+  - Slicers and Timelines
+  - Conditional Formatting and Data Visualization
 
 ## Learnings
 Through this project, I gained practical experience in:
 - Using **Power Query** for end-to-end ETL operations.
+- Hands-on practice with Excel data modeling and Power Query
 - Building relationships and DAX formulas in **Power Pivot**.
 - Designing a structured and interactive **Excel dashboard** for decision-making.
+- Experience in creating a complete dashboard workflow
 - Deriving actionable business insights from real-world-style data.
+- Understanding of business metrics and trend analysis.  
+- Improved ability to build professional Excel dashboards from real-world datasets.
 
 
 ---
 
 ## Conclusion
-This guided Excel project demonstrates the complete process of **data analysis — from data cleaning and modeling to dashboard visualization and insight generation.** It showcases how Excel can be effectively used for business analytics without relying on external BI tools.
+This guided Excel project demonstrates the end-to-end data analysis process — from extracting and cleaning data to building a final interactive dashboard.  
+It provided practical experience in using Excel for business intelligence and improved understanding of how data-driven insights can support decision-making.
+
 
 ---
 
 **Author:** Mounika Seelam  
+Data Analytics Enthusiast
 **Tools Used:** Microsoft Excel, Power Query, Power Pivot  
 **Project Type:** Guided Data Analytics Project
 
